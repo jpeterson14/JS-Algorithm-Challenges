@@ -4,13 +4,13 @@
 function get_array(val) {
 	var arr = []
 	// your code here
-  for(let i = 1; i <= 255; i++) {
+  for(let i = 1; i <= val; i++) {
     arr.push(i);
   }
 
 	return arr;
 }
-console.log(get_array(10));
+console.log(get_array(255));
 
 // Challenge 1 > Get even 1000
 //	Write a function that would get the sum of all the even numbers from 1 to 1000. You may use a modulus operator for this exercise.
@@ -52,8 +52,10 @@ console.log(sum_odd_5000(5000))
 function iterate_array(arr) {
   var sum = 0;
   // your code here
-
-  return sum;
+  for (i = 0; i < arr.length; i++){
+    sum += arr[i]
+  }
+  return sum
 }
 console.log(iterate_array([5,10, 15, -5]))
 
