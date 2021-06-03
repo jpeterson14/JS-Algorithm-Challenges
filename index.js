@@ -62,12 +62,16 @@ console.log(iterate_array([5,10, 15, -5]))
 // Challenge 5 > Find max
 // Given an array with multiple values, write a function that returns the maximum number in the array. (e.g. for [-3,3,5,7] max is 7)
 function find_max(arr) {
-  let max = 0
-  // your code here
+  let max = arr[0]
+  for (i = 1; i < arr.length; i++){
+    if (arr[i] > max){
+      max = arr[i]
+    }
+  }
 
   return max
 }
-console.log(find_max([-3,3,5,7]))
+console.log(find_max([-3,12,3,5,7,11]))
 
 
 // Challenge 6 > Find average
