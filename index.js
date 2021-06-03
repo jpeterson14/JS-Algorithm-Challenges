@@ -78,7 +78,11 @@ console.log(find_max([-3,12,3,5,7,11]))
 // Given an array with multiple values, write a function that returns the average of the values in the array. (e.g. for [1,3,5,7,20] average is 7.2)
 function find_avg(arr) {
   // your code here
-
+var total = 0;
+for(var i = 0; i < arr.length; i++) {
+    total += arr[i];
+}
+var avg = total / arr.length;
   return avg
 }
 console.log(find_avg([1,3,5,7,20]))
