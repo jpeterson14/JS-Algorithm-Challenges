@@ -92,12 +92,12 @@ console.log(find_avg([1,3,5,7,20]))
 // Write a function that would return an array of all the odd numbers between 1 to 50. (ex. [1,3,5, .... , 47,49]). Hint: Use 'push' method.
 function add_odd_numbers(num){
   let sum = [];
-  for(let i=1; i<num; i+=2) { //if you want to return all even numbers, change the i=1 to i=0 or 2
+  for(let i=1; i<num; i+=2) {
     sum.push(i)
   }
  return sum 
 }
-console.log(add_odd_numbers(500))
+console.log(add_odd_numbers(200))
 
 
 // Challenge 8 > Greater than Y
