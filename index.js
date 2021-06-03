@@ -109,8 +109,9 @@ function greaterY(arr, y) {
       count += 1
     }
   }
+  return count
 }
-console.log(greaterY([1,3,4,7]))
+console.log(greaterY([1,3,4,7],6))
 
 
 // Challenge 9 > Squares
@@ -129,13 +130,7 @@ console.log(squareInt([1,5,7,6,4]))
 
 function noNegative(arr) {
   // your code here
-  for(let i=0; i<arr.length; i++) {
-    if(arr[i] < 0) {
-      arr[i] = 0
-    }
-  }
-  return arr
-}
+  
 console.log(noNegative([1,5,-4,-3, 8,-5]))
 
 // Challenge 11 > Max/Min/Avg
