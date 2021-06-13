@@ -226,3 +226,15 @@ function doYouPlayTheDrums(name){
 }
 console.log(doYouPlayTheDrums("Jake"));
 
+//16
+// REVERSE A STRING: Create the function "reverseString" that reverses a string and returns the value of the reversed string. 
+
+function reverseString(string){
+  var finalString = ""
+  for (var lastLetter = string.length -1; lastLetter >= 0; lastLetter--){
+    finalString = finalString + string[lastLetter];
+  }
+  return finalString;
+}
+reverseString("reverse");
+
