@@ -171,3 +171,11 @@ const fullNames = names.map(function(name) {
 });
 
 console.log(fullNames);
+//12
+// FAHRENHEIT to CELSIUS
+function fahrenheitToCelsius(fahrenheit){
+  celsius = (fahrenheit-32) * 5/9;
+  return celsius;
+}
+
+fahrenheitToCelsius(38);
