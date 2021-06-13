@@ -178,4 +178,19 @@ function fahrenheitToCelsius(fahrenheit){
   return celsius;
 }
 
-fahrenheitToCelsius(38);
+console.log(fahrenheitToCelsius(38));
+
+//13
+//LAST DIGIT: Create the function `lastDigit` that accepts two non-negative integer values and returns `true` if they have the same last digit, such as 27 and 57.
+
+function lastDigit(num1,num2){
+  num1 = num1.toString();
+  num2 = num2.toString();
+  if (num1[num1.length-1] === num2[num2.length-1]){
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log(lastDigit(77,997));
+
