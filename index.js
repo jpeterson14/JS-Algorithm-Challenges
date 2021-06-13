@@ -214,3 +214,15 @@ function askNicely(sentence){
 }
 console.log(askNicely("What time is it?"))
 
+//15
+// Do you play the Drums :Create the function doYouPlayTheDrums. If your name starts with the letter "J" or "j", you are playing the Drums!
+
+function doYouPlayTheDrums(name){
+  if (name[0].toUpperCase() === "J"){
+    return name + " plays the Drums.";
+  } else {
+    return name + " does not play the Drums.";
+  }
+}
+console.log(doYouPlayTheDrums("Jake"));
+
