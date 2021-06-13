@@ -193,4 +193,24 @@ function lastDigit(num1,num2){
   }
 }
 console.log(lastDigit(77,997));
+//14
+//ASK POLITELY: Create the function askPolitely that accepts a sentence as an argument. If the last character of the sentence is a question mark, then make sure the question ends with the word "please".
+// If the sentence is not a question, then return the 
+// inputted string without modification. If the sentence 
+// is a question, but already has a please, then also
+// return the input without modification.
+
+function askNicely(sentence){
+  if(sentence[sentence.length-1] === "?"){
+    if (sentence.slice(-7) === "please?"){
+    return sentence;
+    } else {
+      //below slice returns the entire sentence minus the last digit which is the question mark.
+      return sentence.slice(0,-1) + " please?";
+    }
+  } else {
+    return sentence;
+  }
+}
+console.log(askNicely("What time is it?"))
 
