@@ -237,4 +237,15 @@ function reverseString(string){
   return finalString;
 }
 reverseString("reverse");
+//17
+//SUM OF DIGITS: Create the function sumOfDigits that adds individual digits of a number and return the sum.
 
+function sumOfDigits(num) {
+  var sum = 0;             
+  while (num > 0) {        
+    sum = sum + num%10;
+    num = Math.floor(num/10);
+  }
+  return sum;
+}
+sumOfDigits(222);
