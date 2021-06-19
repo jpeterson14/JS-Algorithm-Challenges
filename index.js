@@ -236,7 +236,7 @@ function reverseString(string){
   }
   return finalString;
 }
-reverseString("reverse");
+console.log(reverseString("reverse"));
 //17
 //SUM OF DIGITS: Create the function sumOfDigits that adds individual digits of a number and return the sum.
 
@@ -248,4 +248,16 @@ function sumOfDigits(num) {
   }
   return sum;
 }
-sumOfDigits(222);
+console.log(sumOfDigits(222));
+
+//18
+//FACTORIAL: Create the function factorial(num) that returns the factorial of the parameter.
+
+function factorial(num){
+  var total = 1;     
+  for (num; num > 0; num--){
+    total = total * num
+  }
+  return total;
+}
+console.log(factorial(5));
