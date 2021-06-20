@@ -215,7 +215,7 @@ function askNicely(sentence){
 console.log(askNicely("What time is it?"))
 
 //15
-// Do you play the Drums :Create the function doYouPlayTheDrums. If your name starts with the letter "J" or "j", you are playing the Drums!
+//Create the function If your name starts with the letter "J" or "j", you are playing the Drums!
 
 function doYouPlayTheDrums(name){
   if (name[0].toUpperCase() === "J"){
@@ -227,7 +227,7 @@ function doYouPlayTheDrums(name){
 console.log(doYouPlayTheDrums("Jake"));
 
 //16
-// REVERSE A STRING: Create the function "reverseString" that reverses a string and returns the value of the reversed string. 
+// REVERSE A STRING: Create the function that reverses a string and returns the value of the reversed string. 
 
 function reverseString(string){
   var finalString = ""
@@ -238,7 +238,7 @@ function reverseString(string){
 }
 console.log(reverseString("reverse"));
 //17
-//SUM OF DIGITS: Create the function sumOfDigits that adds individual digits of a number and return the sum.
+//SUM OF DIGITS: Create the function that adds individual digits of a number and return the sum.
 
 function sumOfDigits(num) {
   var sum = 0;             
@@ -251,7 +251,7 @@ function sumOfDigits(num) {
 console.log(sumOfDigits(222));
 
 //18
-//FACTORIAL: Create the function factorial(num) that returns the factorial of the parameter.
+//FACTORIAL: Create the function that returns the factorial of the parameter.
 
 function factorial(num){
   var total = 1;     
@@ -261,3 +261,19 @@ function factorial(num){
   return total;
 }
 console.log(factorial(5));
+
+//19 
+//VOWEL COUNT: Create the function that takes a str parameter and returns the number of vowels.
+
+function vowelCount(string){
+  var count = 0;
+  var vowels = "aeiou";
+  var string = string.toLowerCase();
+  for (i = 0; i < string.length; i++){
+    if (vowels.indexOf(string[i]) > -1)  {
+        count++;
+      }
+  }
+return count;
+}
+console.log(vowelCount("how many vowels?"));
