@@ -277,3 +277,16 @@ function vowelCount(string){
 return count;
 }
 console.log(vowelCount("how many vowels?"));
+
+//20
+// REPEAT A STRING : Create a function "repeat" that accepts two arguments, the string to repeat and the a number that represtents how many times to repeat the string argument.  Return a string that concatenates all the times the string is repeated.
+
+function repeat(string, num){
+  var text = "";
+  while (num > 0){
+    text += `${string}  `;
+    num--;
+  }
+    return text;
+}
+console.log(repeat("five",5));
