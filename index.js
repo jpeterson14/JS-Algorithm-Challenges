@@ -290,3 +290,17 @@ function repeat(string, num){
     return text;
 }
 console.log(repeat("five",5));
+
+//21
+//create a function that accepts an array of strings and returns the longest string
+
+function longestString(arr) {
+	var longest = ''; // Step 0
+	for (var i = 0; i < arr.length; i++) { 
+		if (arr[i].length > longest.length) {
+			longest = arr[i];
+		}
+	}
+	return longest;
+}
+console.log(longestString(["which","word","is","longest"]))
